@@ -1,0 +1,323 @@
+\doxysection{include/abonent.h File Reference}
+\hypertarget{abonent_8h}{}\label{abonent_8h}\index{include/abonent.h@{include/abonent.h}}
+
+
+Заголовочный файл для работы с абонентами  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$errno.\+h$>$}\newline
+Include dependency graph for abonent.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{abonent_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{abonent_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structAbonent}{Abonent}}
+\begin{DoxyCompactList}\small\item\em Структура для хранения информации об абоненте \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structAbonentList}{Abonent\+List}}
+\begin{DoxyCompactList}\small\item\em Структура для хранения списка абонентов \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{abonent_8h_a41a0f80aa17718c56cc163aa74ae8aee}\label{abonent_8h_a41a0f80aa17718c56cc163aa74ae8aee} 
+typedef struct \mbox{\hyperlink{structAbonent}{Abonent}} {\bfseries Abonent}
+\begin{DoxyCompactList}\small\item\em Структура для хранения информации об абоненте \end{DoxyCompactList}\item 
+\Hypertarget{abonent_8h_a3c0dcaea8478248703c8a5acfc22b7a9}\label{abonent_8h_a3c0dcaea8478248703c8a5acfc22b7a9} 
+typedef struct \mbox{\hyperlink{structAbonentList}{Abonent\+List}} {\bfseries Abonent\+List}
+\begin{DoxyCompactList}\small\item\em Структура для хранения списка абонентов \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structAbonentList}{Abonent\+List}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{abonent_8h_ac4f1e991f1dc647ad1f505c404b9945c}{Create\+\_\+abonent\+\_\+list}} (void)
+\begin{DoxyCompactList}\small\item\em Функция для создания списка абонентов \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{abonent_8h_ac77057ce7970c7219f25f36aed2bef10}{Add\+\_\+abonent}} (\mbox{\hyperlink{structAbonentList}{Abonent\+List}} \texorpdfstring{$\ast$}{*}list)
+\begin{DoxyCompactList}\small\item\em Функция для добавления абонента в список \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{abonent_8h_a3c7f3ec130f9b3d59a138d5ae412c69a}{Display\+\_\+records}} (\mbox{\hyperlink{structAbonentList}{Abonent\+List}} \texorpdfstring{$\ast$}{*}list)
+\begin{DoxyCompactList}\small\item\em Функция для отображения всех записей в списке \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{abonent_8h_aab1e64f805b163e608bb2a76db95ad51}{Remove\+\_\+abonent}} (\mbox{\hyperlink{structAbonentList}{Abonent\+List}} \texorpdfstring{$\ast$}{*}list)
+\begin{DoxyCompactList}\small\item\em Функция для удаления абонента из списка \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{abonent_8h_a22a96dc21fa35bf7dec983b08f533169}{Searching\+\_\+abonent}} (\mbox{\hyperlink{structAbonentList}{Abonent\+List}} \texorpdfstring{$\ast$}{*}list)
+\begin{DoxyCompactList}\small\item\em Функция для поиска абонента по имени \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{abonent_8h_a66e4cdc2c49906c5964faf70863aae4b}{Free\+\_\+records}} (\mbox{\hyperlink{structAbonentList}{Abonent\+List}} \texorpdfstring{$\ast$}{*}list)
+\begin{DoxyCompactList}\small\item\em Функция для освобождения памяти, выделенной под список абонентов \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Заголовочный файл для работы с абонентами 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{abonent_8h_ac77057ce7970c7219f25f36aed2bef10}\label{abonent_8h_ac77057ce7970c7219f25f36aed2bef10} 
+\index{abonent.h@{abonent.h}!Add\_abonent@{Add\_abonent}}
+\index{Add\_abonent@{Add\_abonent}!abonent.h@{abonent.h}}
+\doxysubsubsection{\texorpdfstring{Add\_abonent()}{Add\_abonent()}}
+{\footnotesize\ttfamily void Add\+\_\+abonent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structAbonentList}{Abonent\+List}} \texorpdfstring{$\ast$}{*}}]{list }\end{DoxyParamCaption})}
+
+
+
+Функция для добавления абонента в список 
+
+Функция добавляет абонента в конце списка
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{abonent_8c_ac77057ce7970c7219f25f36aed2bef10}{Add\_abonent}}(\mbox{\hyperlink{structAbonentList}{AbonentList}}*\ list)\{}
+\DoxyCodeLine{\ \ \ \mbox{\hyperlink{structAbonent}{Abonent}}*\ new\_abonent\ =\ malloc(\textcolor{keyword}{sizeof}(\mbox{\hyperlink{structAbonent}{Abonent}}));}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \textcolor{keywordflow}{if}(new\_abonent\ ==\ NULL)\{\ \textcolor{comment}{//\ Проверка\ на\ успешное\ выделение\ памяти}}
+\DoxyCodeLine{\ \ \ \ perror(\textcolor{stringliteral}{"{}Malloc\ is\ failed:\ "{}});}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ printf(\textcolor{stringliteral}{"{}Enter\ name:\ "{}});}
+\DoxyCodeLine{\ \ \ scanf(\textcolor{stringliteral}{"{}\%9s"{}},\ new\_abonent-\/>\mbox{\hyperlink{structAbonent_af6ddd10f9c29fd5a7fdbd79965b40186}{name}});}
+\DoxyCodeLine{\ \ \ printf(\textcolor{stringliteral}{"{}Enter\ second\ name:\ "{}});}
+\DoxyCodeLine{\ \ \ scanf(\textcolor{stringliteral}{"{}\%9s"{}},\ new\_abonent-\/>\mbox{\hyperlink{structAbonent_a4412741ffb1b3824fd907fa52db1fe91}{second\_name}});}
+\DoxyCodeLine{\ \ \ printf(\textcolor{stringliteral}{"{}Enter\ phone\ number:\ "{}});}
+\DoxyCodeLine{\ \ \ scanf(\textcolor{stringliteral}{"{}\%9s"{}},\ new\_abonent-\/>\mbox{\hyperlink{structAbonent_a10c04d11e5a9e2c08381e25b764a0c2f}{tel}});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ new\_abonent-\/>\mbox{\hyperlink{structAbonent_a228a0fe07f9b4ed5797dd59df6067ab1}{next}}\ =\ NULL;}
+\DoxyCodeLine{\ \ \ new\_abonent-\/>\mbox{\hyperlink{structAbonent_af69174a79c2f32bd1e8ffbecdfa0654c}{prev}}\ =\ NULL;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \textcolor{keywordflow}{if}\ (list-\/>\mbox{\hyperlink{structAbonentList_aa48b4335730e678f7b32c5c880e41e67}{head}}\ ==\ NULL)\{\ \textcolor{comment}{//\ Если\ список\ пуст,\ то\ голова\ и\ хвост\ указывают\ на\ новый\ элемент}}
+\DoxyCodeLine{\ \ \ \ list-\/>\mbox{\hyperlink{structAbonentList_aa48b4335730e678f7b32c5c880e41e67}{head}}\ =\ new\_abonent;}
+\DoxyCodeLine{\ \ \ \ list-\/>\mbox{\hyperlink{structAbonentList_a6e419f0666edeb2f269d7e11dc692c00}{tail}}\ =\ new\_abonent;}
+\DoxyCodeLine{\ \ \ \}\ \textcolor{keywordflow}{else}\{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Иначе\ добавляем\ элемент\ в\ конец\ списка}}
+\DoxyCodeLine{\ \ \ \ list-\/>\mbox{\hyperlink{structAbonentList_a6e419f0666edeb2f269d7e11dc692c00}{tail}}-\/>\mbox{\hyperlink{structAbonent_a228a0fe07f9b4ed5797dd59df6067ab1}{next}}\ =\ new\_abonent;}
+\DoxyCodeLine{\ \ \ \ new\_abonent-\/>\mbox{\hyperlink{structAbonent_af69174a79c2f32bd1e8ffbecdfa0654c}{prev}}\ =\ list-\/>\mbox{\hyperlink{structAbonentList_a6e419f0666edeb2f269d7e11dc692c00}{tail}};}
+\DoxyCodeLine{\ \ \ \ list-\/>\mbox{\hyperlink{structAbonentList_a6e419f0666edeb2f269d7e11dc692c00}{tail}}\ =\ new\_abonent;}
+\DoxyCodeLine{\ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ list-\/>\mbox{\hyperlink{structAbonentList_af236c7b1d2e86e088b94278c3e074854}{size}}++;\ \textcolor{comment}{//\ +1\ абонент}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em list} & Указатель на список абонентов \\
+\hline
+\end{DoxyParams}
+\Hypertarget{abonent_8h_ac4f1e991f1dc647ad1f505c404b9945c}\label{abonent_8h_ac4f1e991f1dc647ad1f505c404b9945c} 
+\index{abonent.h@{abonent.h}!Create\_abonent\_list@{Create\_abonent\_list}}
+\index{Create\_abonent\_list@{Create\_abonent\_list}!abonent.h@{abonent.h}}
+\doxysubsubsection{\texorpdfstring{Create\_abonent\_list()}{Create\_abonent\_list()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAbonentList}{Abonent\+List}} \texorpdfstring{$\ast$}{*} Create\+\_\+abonent\+\_\+list (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Функция для создания списка абонентов 
+
+Функция создает пустой список абонентов и инициализирует его размер, а также голову и хвост списка
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{structAbonentList}{AbonentList}}*\ \mbox{\hyperlink{abonent_8c_ac4f1e991f1dc647ad1f505c404b9945c}{Create\_abonent\_list}}(\textcolor{keywordtype}{void})\{}
+\DoxyCodeLine{\ \ \ \mbox{\hyperlink{structAbonentList}{AbonentList}}*\ list\ =\ malloc(\textcolor{keyword}{sizeof}(\mbox{\hyperlink{structAbonentList}{AbonentList}}));}
+\DoxyCodeLine{\ \ \ \textcolor{keywordflow}{if}\ (list\ ==\ NULL)\{\ \textcolor{comment}{//\ Проверка\ на\ ошибку\ выделения\ памяти}}
+\DoxyCodeLine{\ \ \ \ \ \ \ perror(\textcolor{stringliteral}{"{}Malloc\ is\ failed"{}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ NULL;}
+\DoxyCodeLine{\ \ \ \}}
+\DoxyCodeLine{\ \ \ list-\/>\mbox{\hyperlink{structAbonentList_af236c7b1d2e86e088b94278c3e074854}{size}}=0;\textcolor{comment}{//\ Инициализация\ размера\ списка}}
+\DoxyCodeLine{\ \ \ list-\/>\mbox{\hyperlink{structAbonentList_aa48b4335730e678f7b32c5c880e41e67}{head}}=NULL;\textcolor{comment}{//\ Инициализация\ головы\ списка}}
+\DoxyCodeLine{\ \ \ list-\/>\mbox{\hyperlink{structAbonentList_a6e419f0666edeb2f269d7e11dc692c00}{tail}}=NULL;\textcolor{comment}{//\ Инициализация\ хвоста\ списка}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \textcolor{keywordflow}{return}\ list;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ \begin{DoxyReturn}{Returns}
+Сам список абонентов 
+\end{DoxyReturn}
+\Hypertarget{abonent_8h_a3c7f3ec130f9b3d59a138d5ae412c69a}\label{abonent_8h_a3c7f3ec130f9b3d59a138d5ae412c69a} 
+\index{abonent.h@{abonent.h}!Display\_records@{Display\_records}}
+\index{Display\_records@{Display\_records}!abonent.h@{abonent.h}}
+\doxysubsubsection{\texorpdfstring{Display\_records()}{Display\_records()}}
+{\footnotesize\ttfamily void Display\+\_\+records (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structAbonentList}{Abonent\+List}} \texorpdfstring{$\ast$}{*}}]{list }\end{DoxyParamCaption})}
+
+
+
+Функция для отображения всех записей в списке 
+
+Функция проходится по списку и выводит информацию о каждом абоненте
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{abonent_8c_a3c7f3ec130f9b3d59a138d5ae412c69a}{Display\_records}}(\mbox{\hyperlink{structAbonentList}{AbonentList}}*\ list)\{}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \mbox{\hyperlink{structAbonent}{Abonent}}*\ ptr\ =\ list-\/>\mbox{\hyperlink{structAbonentList_aa48b4335730e678f7b32c5c880e41e67}{head}};\ \textcolor{comment}{//\ Создаем\ временный\ указатель\ на\ текущей\ элемент\ списка}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \textcolor{keywordflow}{if}\ (ptr\ ==\ NULL)\ \{\ \textcolor{comment}{//\ Проверка\ на\ пустой\ список}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Records\ is\ empty!\(\backslash\)n"{}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \textcolor{keywordtype}{int}\ i\ =\ 1;\ \textcolor{comment}{//\ id\ абонента}}
+\DoxyCodeLine{\ \ \ \textcolor{keywordflow}{while}(ptr\ !=\ NULL)\{}
+\DoxyCodeLine{\ \ \ \ printf(\textcolor{stringliteral}{"{}\%d)\(\backslash\)n"{}},\ i);}
+\DoxyCodeLine{\ \ \ \ printf(\textcolor{stringliteral}{"{}Name:\ \%s\(\backslash\)n"{}},\ ptr-\/>\mbox{\hyperlink{structAbonent_af6ddd10f9c29fd5a7fdbd79965b40186}{name}});}
+\DoxyCodeLine{\ \ \ \ printf(\textcolor{stringliteral}{"{}Second\ name:\ \%s\(\backslash\)n"{}},\ ptr-\/>\mbox{\hyperlink{structAbonent_a4412741ffb1b3824fd907fa52db1fe91}{second\_name}});}
+\DoxyCodeLine{\ \ \ \ printf(\textcolor{stringliteral}{"{}Phone:\ \%s\(\backslash\)n"{}},\ ptr-\/>\mbox{\hyperlink{structAbonent_a10c04d11e5a9e2c08381e25b764a0c2f}{tel}});}
+\DoxyCodeLine{\ \ \ \ ptr\ =\ ptr-\/>\mbox{\hyperlink{structAbonent_a228a0fe07f9b4ed5797dd59df6067ab1}{next}};\ \textcolor{comment}{//\ Переходим\ к\ следующему\ элементу\ списка}}
+\DoxyCodeLine{\ \ \ \ i++;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ param list Указатель на список абонентов \Hypertarget{abonent_8h_a66e4cdc2c49906c5964faf70863aae4b}\label{abonent_8h_a66e4cdc2c49906c5964faf70863aae4b} 
+\index{abonent.h@{abonent.h}!Free\_records@{Free\_records}}
+\index{Free\_records@{Free\_records}!abonent.h@{abonent.h}}
+\doxysubsubsection{\texorpdfstring{Free\_records()}{Free\_records()}}
+{\footnotesize\ttfamily void Free\+\_\+records (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structAbonentList}{Abonent\+List}} \texorpdfstring{$\ast$}{*}}]{list }\end{DoxyParamCaption})}
+
+
+
+Функция для освобождения памяти, выделенной под список абонентов 
+
+Функция проходит по списку и освобождает память, выделенную под каждый элемент списка.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{abonent_8c_a66e4cdc2c49906c5964faf70863aae4b}{Free\_records}}(\mbox{\hyperlink{structAbonentList}{AbonentList}}*\ list)\{}
+\DoxyCodeLine{\ \ \ \mbox{\hyperlink{structAbonent}{Abonent}}*\ ptr\ =\ list-\/>\mbox{\hyperlink{structAbonentList_aa48b4335730e678f7b32c5c880e41e67}{head}};}
+\DoxyCodeLine{\ \ \ \textcolor{keywordflow}{while}(ptr!=NULL)\{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{structAbonent}{Abonent}}*\ next\ =\ ptr-\/>\mbox{\hyperlink{structAbonent_a228a0fe07f9b4ed5797dd59df6067ab1}{next}};\ \textcolor{comment}{//\ Сохраняем\ указатель\ на\ следующий\ элемент}}
+\DoxyCodeLine{\ \ \ \ free(ptr);\ \textcolor{comment}{//\ Освобождаем\ память,\ выделенную\ под\ текущий\ элемент}}
+\DoxyCodeLine{\ \ \ \ ptr\ =\ next;\ \textcolor{comment}{//\ Переходим\ к\ следующему\ элементу}}
+\DoxyCodeLine{\ \ \ \}}
+\DoxyCodeLine{\ \ \ free(list);\ \textcolor{comment}{//\ Очищаем\ память,\ выделенную\ под\ список}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em list} & указатель на список абонентов \\
+\hline
+\end{DoxyParams}
+\Hypertarget{abonent_8h_aab1e64f805b163e608bb2a76db95ad51}\label{abonent_8h_aab1e64f805b163e608bb2a76db95ad51} 
+\index{abonent.h@{abonent.h}!Remove\_abonent@{Remove\_abonent}}
+\index{Remove\_abonent@{Remove\_abonent}!abonent.h@{abonent.h}}
+\doxysubsubsection{\texorpdfstring{Remove\_abonent()}{Remove\_abonent()}}
+{\footnotesize\ttfamily void Remove\+\_\+abonent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structAbonentList}{Abonent\+List}} \texorpdfstring{$\ast$}{*}}]{list }\end{DoxyParamCaption})}
+
+
+
+Функция для удаления абонента из списка 
+
+Функция удаляет абонента из списка по его индексу, удаляет, смотря, где находится абонент в списке
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{abonent_8c_aab1e64f805b163e608bb2a76db95ad51}{Remove\_abonent}}(\mbox{\hyperlink{structAbonentList}{AbonentList}}*\ list)\{}
+\DoxyCodeLine{\ \ \ \textcolor{keywordtype}{int}\ choice\ =\ 0;\ \textcolor{comment}{//\ Выбор\ пользователя}}
+\DoxyCodeLine{\ \ \ \ printf(\textcolor{stringliteral}{"{}Please\ select\ a\ abonent\ index:\ "{}});}
+\DoxyCodeLine{\ \ \ \ scanf(\textcolor{stringliteral}{"{}\%d"{}},\ \&choice);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (choice\ <\ 1\ ||\ (\textcolor{keywordtype}{size\_t})choice\ >\ list-\/>\mbox{\hyperlink{structAbonentList_af236c7b1d2e86e088b94278c3e074854}{size}})\{\ \textcolor{comment}{//\ Если\ выбор\ пользователя\ выходит\ за\ пределы\ списка,\ то\ выводим\ ошибку}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Invalid\ choice!"{}});}
+\DoxyCodeLine{\ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{structAbonent}{Abonent}}*\ ptr\ =\ list-\/>\mbox{\hyperlink{structAbonentList_aa48b4335730e678f7b32c5c880e41e67}{head}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (ptr\ ==\ NULL)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Records\ is\ empty!\(\backslash\)n"{}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 1;\ i\ <\ choice;\ i++)\{\ \textcolor{comment}{//\ Этим\ циклом\ мы\ доходим\ до\ нужного\ элемента}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ptr\ =\ ptr-\/>\mbox{\hyperlink{structAbonent_a228a0fe07f9b4ed5797dd59df6067ab1}{next}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(list-\/>\mbox{\hyperlink{structAbonentList_aa48b4335730e678f7b32c5c880e41e67}{head}}\ ==\ list-\/>\mbox{\hyperlink{structAbonentList_a6e419f0666edeb2f269d7e11dc692c00}{tail}})\{\ \textcolor{comment}{//\ Если\ голова\ и\ хвост\ совпадают,\ значит\ список\ состоит\ из\ одного\ элемента\ и\ обнуляем\ его}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ list-\/>\mbox{\hyperlink{structAbonentList_aa48b4335730e678f7b32c5c880e41e67}{head}}\ =\ NULL;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ list-\/>\mbox{\hyperlink{structAbonentList_a6e419f0666edeb2f269d7e11dc692c00}{tail}}\ =\ NULL;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (ptr\ ==\ list-\/>\mbox{\hyperlink{structAbonentList_aa48b4335730e678f7b32c5c880e41e67}{head}})\{\ \textcolor{comment}{//\ Если\ указатель\ совпал\ с\ головой(Мы\ хоти\ удалить\ голову),\ то\ обновляем\ голову\ \ и\ обнуляем\ предыдущий\ элемент}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ list-\/>\mbox{\hyperlink{structAbonentList_aa48b4335730e678f7b32c5c880e41e67}{head}}\ =\ ptr-\/>\mbox{\hyperlink{structAbonent_a228a0fe07f9b4ed5797dd59df6067ab1}{next}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ list-\/>\mbox{\hyperlink{structAbonentList_aa48b4335730e678f7b32c5c880e41e67}{head}}-\/>\mbox{\hyperlink{structAbonent_af69174a79c2f32bd1e8ffbecdfa0654c}{prev}}\ =\ NULL;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (ptr\ ==\ list-\/>\mbox{\hyperlink{structAbonentList_a6e419f0666edeb2f269d7e11dc692c00}{tail}})\{\ \textcolor{comment}{//\ Если\ указатель\ совпал\ с\ хвостом(Мы\ хоти\ удалить\ хвост),\ то\ обновляем\ хвост\ и\ обнуляем\ следующий\ элемент}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ list-\/>\mbox{\hyperlink{structAbonentList_a6e419f0666edeb2f269d7e11dc692c00}{tail}}\ =\ ptr-\/>\mbox{\hyperlink{structAbonent_af69174a79c2f32bd1e8ffbecdfa0654c}{prev}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ list-\/>\mbox{\hyperlink{structAbonentList_a6e419f0666edeb2f269d7e11dc692c00}{tail}}-\/>\mbox{\hyperlink{structAbonent_a228a0fe07f9b4ed5797dd59df6067ab1}{next}}\ =\ NULL;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Иначе\ у\ нас\ элемент\ в\ середине\ и\ обновляем\ указатели\ предыдущего\ и\ следующего\ элементов}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ptr-\/>\mbox{\hyperlink{structAbonent_af69174a79c2f32bd1e8ffbecdfa0654c}{prev}}-\/>\mbox{\hyperlink{structAbonent_a228a0fe07f9b4ed5797dd59df6067ab1}{next}}\ =\ ptr-\/>\mbox{\hyperlink{structAbonent_a228a0fe07f9b4ed5797dd59df6067ab1}{next}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ptr-\/>\mbox{\hyperlink{structAbonent_a228a0fe07f9b4ed5797dd59df6067ab1}{next}}-\/>\mbox{\hyperlink{structAbonent_af69174a79c2f32bd1e8ffbecdfa0654c}{prev}}\ =\ ptr-\/>\mbox{\hyperlink{structAbonent_af69174a79c2f32bd1e8ffbecdfa0654c}{prev}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ free(ptr);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ list-\/>\mbox{\hyperlink{structAbonentList_af236c7b1d2e86e088b94278c3e074854}{size}}-\/-\/;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em list} & Список абонентов \\
+\hline
+\end{DoxyParams}
+\Hypertarget{abonent_8h_a22a96dc21fa35bf7dec983b08f533169}\label{abonent_8h_a22a96dc21fa35bf7dec983b08f533169} 
+\index{abonent.h@{abonent.h}!Searching\_abonent@{Searching\_abonent}}
+\index{Searching\_abonent@{Searching\_abonent}!abonent.h@{abonent.h}}
+\doxysubsubsection{\texorpdfstring{Searching\_abonent()}{Searching\_abonent()}}
+{\footnotesize\ttfamily void Searching\+\_\+abonent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structAbonentList}{Abonent\+List}} \texorpdfstring{$\ast$}{*}}]{list }\end{DoxyParamCaption})}
+
+
+
+Функция для поиска абонента по имени 
+
+Функция ищет абонента по имени пока не совпадет имя в списке и имя введенное пользователем
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{abonent_8c_a22a96dc21fa35bf7dec983b08f533169}{Searching\_abonent}}(\mbox{\hyperlink{structAbonentList}{AbonentList}}*\ list)\{}
+\DoxyCodeLine{\ \ \ \textcolor{keywordtype}{char}\ name\_for\_searching[10];\textcolor{comment}{//Создаем\ массив\ для\ хранения\ имени\ абонента\ для\ поиска}}
+\DoxyCodeLine{\ \ \ \ printf(\textcolor{stringliteral}{"{}Enter\ the\ name\ for\ searching:\ "{}});}
+\DoxyCodeLine{\ \ \ \ scanf(\textcolor{stringliteral}{"{}\%9s"{}},\ name\_for\_searching);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{structAbonent}{Abonent}}*\ ptr\ =\ list-\/>\mbox{\hyperlink{structAbonentList_aa48b4335730e678f7b32c5c880e41e67}{head}};}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (ptr\ ==\ NULL)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Records\ is\ empty!\(\backslash\)n"{}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{int}\ found\ =\ 0;\ \textcolor{comment}{//\ Флаг\ если\ абонент\ найден}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id}\ =\ 1;\ \textcolor{comment}{//\ айди\ абонента}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{while}(ptr\ !=\ NULL)\{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ i\ =\ 0;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (name\_for\_searching[i]!=\textcolor{charliteral}{'\(\backslash\)0'}\ \&\&\ ptr-\/>\mbox{\hyperlink{structAbonent_af6ddd10f9c29fd5a7fdbd79965b40186}{name}}[i]!=\textcolor{charliteral}{'\(\backslash\)0'}\ \&\&\ name\_for\_searching[i]\ ==\ ptr-\/>\mbox{\hyperlink{structAbonent_af6ddd10f9c29fd5a7fdbd79965b40186}{name}}[i])\{\ \textcolor{comment}{//\ Этим\ циклом\ мы\ проходимся\ и\ проверяем,\ что\ символы\ в\ имени\ искомого\ абонента\ и\ имени\ текущего\ абонента\ совпадают}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ i++;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (name\_for\_searching[i]==\textcolor{charliteral}{'\(\backslash\)0'}\ \&\&\ ptr-\/>\mbox{\hyperlink{structAbonent_af6ddd10f9c29fd5a7fdbd79965b40186}{name}}[i]==\textcolor{charliteral}{'\(\backslash\)0'})\ \{\ \textcolor{comment}{//\ Если\ имена\ совпали,\ то\ выводим\ информацию}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}ID:\ \%d\(\backslash\)n"{}},\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Name:\ \%s\(\backslash\)n"{}},\ ptr-\/>\mbox{\hyperlink{structAbonent_af6ddd10f9c29fd5a7fdbd79965b40186}{name}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Second\ Name:\ \%s\(\backslash\)n"{}},\ ptr-\/>\mbox{\hyperlink{structAbonent_a4412741ffb1b3824fd907fa52db1fe91}{second\_name}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Phone\ Number:\ \%s\(\backslash\)n"{}},\ ptr-\/>\mbox{\hyperlink{structAbonent_a10c04d11e5a9e2c08381e25b764a0c2f}{tel}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ found\ =\ 1;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ ptr\ =\ ptr-\/>\mbox{\hyperlink{structAbonent_a228a0fe07f9b4ed5797dd59df6067ab1}{next}};\ \textcolor{comment}{//\ Переходим\ к\ следующему\ элементу\ списка}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \textcolor{keywordtype}{id}++;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (found\ ==\ 0)\{\ \textcolor{comment}{//\ Если\ абонент\ не\ найден}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Abonent\ is\ not\ found"{}});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em list} & указатель на список абонентов \\
+\hline
+\end{DoxyParams}

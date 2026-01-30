@@ -1,0 +1,89 @@
+\doxysection{src/ex.c File Reference}
+\hypertarget{ex_8c}{}\label{ex_8c}\index{src/ex.c@{src/ex.c}}
+
+
+Файл с функцией main и с циклом для меню  
+
+
+{\ttfamily \#include "{}../include/abonent.\+h"{}}\newline
+Include dependency graph for ex.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{ex_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{ex_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}} (void)
+\begin{DoxyCompactList}\small\item\em Функция main с меню \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Файл с функцией main и с циклом для меню 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{ex_8c_a840291bc02cba5474a4cb46a9b9566fe}\label{ex_8c_a840291bc02cba5474a4cb46a9b9566fe} 
+\index{ex.c@{ex.c}!main@{main}}
+\index{main@{main}!ex.c@{ex.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Функция main с меню 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{ex_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}}(\textcolor{keywordtype}{void})\{}
+\DoxyCodeLine{\ \ \ \mbox{\hyperlink{structAbonentList}{AbonentList}}*\ records\ =\ \mbox{\hyperlink{abonent_8c_ac4f1e991f1dc647ad1f505c404b9945c}{Create\_abonent\_list}}();\ \textcolor{comment}{//\ Создаем\ список\ абонентов}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \textcolor{keywordtype}{int}\ answer\ =\ 0;\ \textcolor{comment}{//\ Инициализируем\ переменную\ ответа}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \textcolor{keywordflow}{while}\ (answer\ !=\ 5)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)n===================================="{}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)n1)\ Add\ abonent\(\backslash\)n2)\ Remove\ abonent\(\backslash\)n3)\ Search\ abonent\ by\ name\(\backslash\)n4)\ Display\ all\ records\(\backslash\)n5)\ Exit"{}});\textcolor{comment}{//Рисовка\ меню}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)n===================================="{}});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)nChoose\ an\ answer:\ "{}});\textcolor{comment}{//Сообщение\ о\ выборе\ ответа}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ scanf(\textcolor{stringliteral}{"{}\%d"{}},\ \&answer);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{comment}{//При\ определенном\ ответе,\ определенные\ действия}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (answer)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 1:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Adding\ abonent...\(\backslash\)n"{}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{abonent_8c_ac77057ce7970c7219f25f36aed2bef10}{Add\_abonent}}(records);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 2:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Removing\ abonent...\(\backslash\)n"{}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{abonent_8c_aab1e64f805b163e608bb2a76db95ad51}{Remove\_abonent}}(records);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 3:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Searching\ abonent...\(\backslash\)n"{}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{abonent_8c_a22a96dc21fa35bf7dec983b08f533169}{Searching\_abonent}}(records);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 4:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Displaying\ all\ records...\(\backslash\)n"{}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{abonent_8c_a3c7f3ec130f9b3d59a138d5ae412c69a}{Display\_records}}(records);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 5:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Exiting...\(\backslash\)n"{}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{abonent_8c_a66e4cdc2c49906c5964faf70863aae4b}{Free\_records}}(records);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Error!\ Invalid\ choice\ '\%d'.\ Please\ enter\ 1-\/5.\(\backslash\)n"{}},\ answer);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ \begin{DoxyReturn}{Returns}
+0 
+\end{DoxyReturn}

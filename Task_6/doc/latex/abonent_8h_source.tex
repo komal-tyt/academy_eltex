@@ -1,0 +1,36 @@
+\doxysection{abonent.\+h}
+\hypertarget{abonent_8h_source}{}\label{abonent_8h_source}\index{include/abonent.h@{include/abonent.h}}
+\mbox{\hyperlink{abonent_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ ABONENT\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ ABONENT\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <errno.h>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structAbonent}{Abonent}}\{}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{structAbonent_af6ddd10f9c29fd5a7fdbd79965b40186}{name}}[10];\ }
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{structAbonent_a4412741ffb1b3824fd907fa52db1fe91}{second\_name}}[10];\ }
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{structAbonent_a10c04d11e5a9e2c08381e25b764a0c2f}{tel}}[10];\ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structAbonent}{Abonent}}*\ \mbox{\hyperlink{structAbonent_a228a0fe07f9b4ed5797dd59df6067ab1}{next}};\ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structAbonent}{Abonent}}*\ \mbox{\hyperlink{structAbonent_af69174a79c2f32bd1e8ffbecdfa0654c}{prev}};\ }
+\DoxyCodeLine{00019\ \}\ \mbox{\hyperlink{structAbonent}{Abonent}};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structAbonentList}{AbonentList}}\{}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{structAbonentList_af236c7b1d2e86e088b94278c3e074854}{size}};\ }
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{structAbonent}{Abonent}}*\ \mbox{\hyperlink{structAbonentList_aa48b4335730e678f7b32c5c880e41e67}{head}};\ }
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{structAbonent}{Abonent}}*\ \mbox{\hyperlink{structAbonentList_a6e419f0666edeb2f269d7e11dc692c00}{tail}};\ }
+\DoxyCodeLine{00026\ \}\ \mbox{\hyperlink{structAbonentList}{AbonentList}};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \mbox{\hyperlink{structAbonentList}{AbonentList}}*\ \mbox{\hyperlink{abonent_8h_ac4f1e991f1dc647ad1f505c404b9945c}{Create\_abonent\_list}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00029\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{abonent_8h_ac77057ce7970c7219f25f36aed2bef10}{Add\_abonent}}(\mbox{\hyperlink{structAbonentList}{AbonentList}}*\ list);}
+\DoxyCodeLine{00030\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{abonent_8h_a3c7f3ec130f9b3d59a138d5ae412c69a}{Display\_records}}(\mbox{\hyperlink{structAbonentList}{AbonentList}}*\ list);}
+\DoxyCodeLine{00031\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{abonent_8h_aab1e64f805b163e608bb2a76db95ad51}{Remove\_abonent}}(\mbox{\hyperlink{structAbonentList}{AbonentList}}*\ list);}
+\DoxyCodeLine{00032\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{abonent_8h_a22a96dc21fa35bf7dec983b08f533169}{Searching\_abonent}}(\mbox{\hyperlink{structAbonentList}{AbonentList}}*\ list);}
+\DoxyCodeLine{00033\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{abonent_8h_a66e4cdc2c49906c5964faf70863aae4b}{Free\_records}}(\mbox{\hyperlink{structAbonentList}{AbonentList}}*\ list);}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

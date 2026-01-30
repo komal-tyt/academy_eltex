@@ -1,0 +1,11 @@
+<map id="src/ex.c" name="src/ex.c">
+<area shape="rect" id="Node000001" title="Файл с функцией main и с циклом для меню" alt="" coords="96,5,168,31"/>
+<area shape="rect" id="Node000002" href="$abonent_8h.html" title="Заголовочный файл для работы с абонентами" alt="" coords="57,79,207,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,31,135,65,129,65,129,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,152,72,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="119,106,66,146,63,141,115,102"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="97,152,167,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="135,104,135,138,129,138,129,104"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="191,152,259,177"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="149,102,201,141,198,146,145,106"/>
+</map>
