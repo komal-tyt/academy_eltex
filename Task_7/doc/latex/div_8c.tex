@@ -1,0 +1,47 @@
+\doxysection{src/div.c File Reference}
+\hypertarget{div_8c}{}\label{div_8c}\index{src/div.c@{src/div.c}}
+
+
+Файл с реализацией функции для деления двух чисел  
+
+
+{\ttfamily \#include "{}../include/div.\+h"{}}\newline
+Include dependency graph for div.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=167pt]{div_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{div_8c_ae060b384e785d52f7ea870a3dd691325}\label{div_8c_ae060b384e785d52f7ea870a3dd691325} 
+int {\bfseries Div} (int a, int b)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Файл с реализацией функции для деления двух чисел 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Первое число для деления \\
+\hline
+{\em b} & Второе число для деления \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Результат деления чисел a на b 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Если b равно 0, функция выводит сообщение об ошибке и возвращает -\/1 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if}\ (b\ ==\ 0\ )\{}
+\DoxyCodeLine{\ \ \ \ printf(\textcolor{stringliteral}{"{}Error!\ b\ =\ 0!"{}});}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ -\/1;}
+\DoxyCodeLine{\ \}}
+
+\end{DoxyCode}
+ 
+\end{DoxyNote}

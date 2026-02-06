@@ -1,0 +1,16 @@
+<map id="src/main.c" name="src/main.c">
+<area shape="rect" id="Node000001" title="Файл с меню и реализацией функций для основных арифметический действий" alt="" coords="239,5,328,31"/>
+<area shape="rect" id="Node000002" href="$add_8h.html" title="Файл с реализацией прототипа функции для сложения двуч чисел" alt="" coords="5,79,127,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="249,33,115,77,113,72,248,28"/>
+<area shape="rect" id="Node000004" href="$sub_8h.html" title="Файл с реализацией прототипа функции для вычитания двух чисел" alt="" coords="151,79,271,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="273,33,235,71,231,67,270,29"/>
+<area shape="rect" id="Node000005" href="$mul_8h.html" title="Файл с реализацией прототипа функции для умножения двух чисел" alt="" coords="295,79,418,104"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="297,29,337,67,333,71,294,33"/>
+<area shape="rect" id="Node000006" href="$div_8h.html" title="Файл с реализацией прототипа функции для деления двух чисел" alt="" coords="443,79,559,104"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="319,28,453,72,452,77,317,33"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="250,152,317,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="102,101,238,146,236,151,100,107"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="225,102,264,140,260,144,221,106"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="346,106,307,144,303,140,343,102"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="467,107,331,151,329,146,465,101"/>
+</map>

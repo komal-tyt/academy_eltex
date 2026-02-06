@@ -1,0 +1,7 @@
+<map id="include/mul.h" name="include/mul.h">
+<area shape="rect" id="Node000001" title="Файл с реализацией прототипа функции для умножения двух чисел" alt="" coords="49,5,160,31"/>
+<area shape="rect" id="Node000002" href="$main_8c.html" title="Файл с меню и реализацией функций для основных арифметический действий" alt="" coords="5,79,95,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,43,61,80,57,77,85,40"/>
+<area shape="rect" id="Node000003" href="$mul_8c.html" title="Файл с реализацией функции для умножения двух чисел" alt="" coords="119,79,200,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="124,40,153,77,148,80,120,43"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="include/add.h" name="include/add.h">
+<area shape="rect" id="Node000001" title="Файл с реализацией прототипа функции для сложения двуч чисел" alt="" coords="45,5,155,31"/>
+<area shape="rect" id="Node000002" href="$add_8c.html" title="Файл с реализацией функции для сложения двух чисел" alt="" coords="5,79,85,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,43,56,80,52,77,81,40"/>
+<area shape="rect" id="Node000003" href="$main_8c.html" title="Файл с меню и реализацией функций для основных арифметический действий" alt="" coords="110,79,199,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="119,40,148,77,144,80,115,43"/>
+</map>

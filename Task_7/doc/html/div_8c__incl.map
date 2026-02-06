@@ -1,0 +1,7 @@
+<map id="src/div.c" name="src/div.c">
+<area shape="rect" id="Node000001" title="Файл с реализацией функции для деления двух чисел" alt="" coords="26,5,101,31"/>
+<area shape="rect" id="Node000002" href="$div_8h.html" title="Файл с реализацией прототипа функции для деления двух чисел" alt="" coords="5,79,121,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="66,31,66,65,61,65,61,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="30,152,97,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="66,104,66,138,61,138,61,104"/>
+</map>
