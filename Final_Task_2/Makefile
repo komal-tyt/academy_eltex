@@ -6,10 +6,10 @@ TARGET = bin/taxi_manager
 SOURCES = src/main.c src/driver_manager.c src/driver.c
 OBJECTS = build/obj/main.o build/obj/driver_manager.o build/obj/driver.o
 
-all: obj bin $(TARGET)
+all: build bin $(TARGET)
 
-obj:
-	mkdir -p obj
+build:
+	mkdir -p build/obj
 
 bin:
 	mkdir -p bin
