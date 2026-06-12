@@ -6,6 +6,14 @@ TARGET = bin/taxi_manager
 SOURCES = src/main.c src/driver_manager.c src/driver.c
 OBJECTS = build/obj/main.o build/obj/driver_manager.o build/obj/driver.o
 
+all: obj bin $(TARGET)
+
+obj:
+	mkdir -p obj
+
+bin:
+	mkdir -p bin
+
 $(TARGET): $(OBJECTS)
 	$(CC) $(CFLAGS) -o $@ $^ $(LDLIBS)
 
