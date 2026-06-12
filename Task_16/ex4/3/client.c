@@ -72,7 +72,7 @@ int main(){
 	struct iphdr ip;
 	ip.check = 0;
 	ip.saddr = inet_addr("192.168.0.23");
-	ip.daddr = 0;
+	ip.daddr = inet_addr("192.168.0.15");
 	ip.tot_len = 0;
 	ip.id = 0;
 	ip.version = 4;
