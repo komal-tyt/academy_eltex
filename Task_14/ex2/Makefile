@@ -13,7 +13,16 @@ PATHSRC = src
 PATHLIB = build/lib
 LIB = $(PATHLIB)/libchat.a
 
-all: bin/client bin/server
+all: obj lib bin/client bin/server
+
+obj:
+	mkdir -p build/obj
+
+lib:
+	mkdir -p build/lib
+
+bin:
+	mkdir -p bin
 
 bin/client: build/obj/client.o $(LIB)
 	$(CC) $(CFLAGS) $< -o $@ -L$(PATHLIB) -lchat $(LDFLAGS)
