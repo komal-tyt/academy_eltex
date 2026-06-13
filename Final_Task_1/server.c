@@ -16,7 +16,7 @@ typedef struct{
 	int count_msg;
 } Client;
 
-Client clients[5];
+Client *clients = NULL;
 int client_count = 0;
 
 int find_client(uint32_t ip, uint16_t port) {
@@ -28,12 +28,24 @@ int find_client(uint32_t ip, uint16_t port) {
     return -1;
 }
 
-int add_client(uint32_t ip, uint16_t port) {
-    clients[client_count].ip = ip;
-    clients[client_count].port = port;
-    clients[client_count].count_msg = 1;
-    client_count++;
-    return client_count - 1;
+void  add_client(uint32_t ip, uint16_t port) {
+	client_count++;
+    clients = realloc(clients, client_count * sizeof(Client));
+    clients[client_count-1].ip = ip;
+    clients[client_count-1].port = port;
+    clients[client_count-1].count_msg = 1;
+}
+
+void remove_client(int index) {
+ 	if (client_count == 0) {
+        printf("STOP you cant remove!\n");
+        return;
+    }
+    for (int i = index; i < client_count - 1; i++) {
+        clients[i] = clients[i+1];
+    }
+    client_count--;
+    clients = realloc(clients, client_count * sizeof(Client));
 }
 
 int main(){
@@ -90,11 +102,7 @@ int main(){
 
             int id = find_client(ip->saddr, udp->source);
             if (id != -1) {
-                for (int i = id; i < client_count - 1; i++) {
-                    clients[i] = clients[i + 1];
-                }
-                client_count--;
-                printf("Client removed\n");
+                remove_client(id);
             }
             continue;
         }
@@ -103,7 +111,8 @@ int main(){
 
         int id = find_client(ip->saddr, udp->source);
         if (id == -1) {
-            id = add_client(ip->saddr, udp->source);
+            add_client(ip->saddr, udp->source);
+            id = client_count - 1;
         }
 
         char answer[SIZE];
